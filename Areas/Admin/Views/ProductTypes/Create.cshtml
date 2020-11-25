@@ -31,3 +31,10 @@
         </div>
     </div>
 </form>
+
+
+<!--To make the form validation on the client  side-->
+@section Scripts{
+
+    @{ await Html.RenderPartialAsync(partialViewName: "_ValidationScriptsPartial");}
+}
