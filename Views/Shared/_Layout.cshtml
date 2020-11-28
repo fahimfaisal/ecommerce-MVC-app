@@ -4,8 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ecommerce</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+   
+    <!--
+        include : Loads the CSS from the offline directory
+        exclude: Loads the CSS online
+    
+    -->
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    </environment>
+
+    <environment exclude="Development">
+
+
+    </environment>
+
+
 </head>
 <body>
     <header>
